@@ -3,9 +3,14 @@
 *{
     padding: 0px;
     margin: 0px;
-    box-sizing: border-box;
 }
 
+/* Color Theme Swatches in RGBA */
+.Trio-of-Lakers-1-rgba { color: rgba(46, 21, 63, 1); }
+.Trio-of-Lakers-2-rgba { color: rgba(68, 35, 114, 1); }
+.Trio-of-Lakers-3-rgba { color: rgba(37, 2, 114, 1); }
+.Trio-of-Lakers-4-rgba { color: rgba(242, 214, 75, 1); }
+.Trio-of-Lakers-5-rgba { color: rgba(242, 192, 99, 1); }
 body{
     background-image: url(../assets/NBAbubblefeatured.png);
     background-position: center;
@@ -13,152 +18,23 @@ body{
     background-attachment: fixed;
     background-size: cover;
 }
-
-p{
-    font-family: 'Quicksand', sans-serif;
-    color: rgb(0, 0, 0);
+/*navbar*/
+.fondo-nav{
+    background-color: rgba(46, 21, 63, 0.80);
 }
-
-/* Barra de navegacion */
-header{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 10px;
-    background-color: rgba(0, 0, 0, 0.750);
-    border: 2px solid #3c66e3;
-}
-header a img{
-    width: 150px;
-}
-header nav ul{
-    list-style: none;
-}
-header nav ul li{
-    display: inline-block;
-}
-header nav ul li a{
-    text-decoration: none;
-    padding-right: 30px;
-    padding-left: 30px;
-    color: white;
-}
-.boton{
-    display: inline-block;
-    color: white;
-    padding: 5px 15px;
-    border: 2px solid #3c66e3;
-    border-radius: 10px;
-}
-.boton:hover{
-    animation: pulsate 1s ease-in-out;
-}
-@keyframes pulsate{
-    0%{
-        box-shadow: 
-        0 0 15px #5ddcff,
-        0 0 25px #4e00c2;
-    }
-}
-
-/* pagina principal */
-main{
-    background-color: rgba(0, 0, 0, 0.5);
-    width: 65vw;
-    margin: 0 auto;
-    border-radius: 10%;
-}
-h1{
-    text-align: center;
-    font-size: 120px;
-}
-h1{
-    font-family: 'Permanent Marker', cursive;
-    font-size: 90px;
-    color: white;
-}
-
-h2, h3{
-    color: rgb(255, 255, 255);
-    padding-top: 10px;
-}
-main section figure img{
-    width: 400px;
-}
-main section div{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-.info-personal{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-.info-personal h2{
-    font-size: 35px;
-}
-/*trayectoria estilos*/
-.trayectoria figure img{
-    width: 250px;
-    margin-left: 50px;
-    margin-right: 0px;
-}
-.trayectoria{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: auto;
-    grid-template-areas: "titulo titulo"
-                        "imagen equipoa"
-                        "imagen equipob"
-                        "imagen equipoc";
-}
-
-.titulo{
-    grid-area: titulo;
-    text-align: center;
-}
-.lebron-rookie{
-    grid-area: imagen;
-}
-.cleveland{
-    grid-area: equipoa;
-    display: flex; 
-    flex-direction: column;
-}
-.heat{
-    grid-area: equipob;
-    display: flex; 
-    flex-direction: column;
-}
-.lakers{
-    grid-area: equipoc;
-    display: flex; 
-    flex-direction: column;
-} 
-.logo-equipo{
+.logo-nav{
     width: 100px;
 }
 
-/*Pie de pagina*/
-footer{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding: 0px 10px;
-    background-color: rgba(0, 0, 0, 0.750);
-    border: 2px solid #3c66e3;
+/*contenido*/
+section{
+    background-color: rgba(37, 2, 114, 0.75);
+    border-radius: 5%;
 }
-footer a img{
-    width: 175px;
+.lebron-james{
+    width: 300px;
 }
-footer div a img{
-    width: 50px;
-}
-footer div a{
-    justify-content: space-around;
+.centrado{
+    padding-top: 15%;
 }
 
