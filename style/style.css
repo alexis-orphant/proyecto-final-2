@@ -121,6 +121,11 @@ footer{
 
 /*Vista tablet*/
 @media screen and (max-width: 768px ){
+    .lebron-james{
+        display: block !important;
+        margin: auto;
+        width: 280px;
+    }
     .trayectoria{
         display: grid;
         grid-template-columns: auto;
@@ -169,7 +174,13 @@ footer{
     }
 }
 /*vista mobile*/
+
 @media screen and (max-width: 320px ){
+    .lebron-james{
+        display: block !important;
+        margin: auto;
+        width: 160px;
+    }
     .trayectoria{
         display: grid;
         grid-template-columns: auto;
@@ -188,7 +199,7 @@ footer{
         width: 100px !important;
     }
     .lebron-rookie{
-        grid-area: imagen;
+        grid-area: imagen; 
     }
     .cleveland{
         grid-area: equipoa;
