@@ -15,7 +15,7 @@
     <!--navbar-->
     <header class="navbar navbar-expand-lg navbar-dark fondo-nav">
         <nav class="container-fluid">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="./index.html">
                 <img class="navbar-brand logo-nav" src="./assets/logo-lebron-blanco.png" alt="logo-lebron-james">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -24,17 +24,17 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./pages/trayectoria.html">Trayectoria</a>
+                    <li class="nav-item ps-2">
+                        <a class="nav-link active boton" aria-current="page" href="./pages/trayectoria.html">Trayectoria</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#">Logros</a>
+                    <li class="nav-item ps-2">
+                        <a class="nav-link disabled boton" href="#">Logros</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#">Estadisticas</a>
+                    <li class="nav-item ps-2">
+                        <a class="nav-link disabled boton" href="#">Estadisticas</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled">Contacto</a>
+                    <li class="nav-item ps-2">
+                        <a class="nav-link disabled boton">Contacto</a>
                     </li>
                 </ul>
             </div>
@@ -42,17 +42,50 @@
     </header>
     <!--contenido-->
     <section class="w-50 mx-auto">
-        <h1 class="text-center text-light">LeBron James</h1>
+        <h1 class="text-center text-light pt-2">LeBron James</h1>
         <div class="row">
-            <div class="col">
+            <figure class="col">
                 <img class="lebron-james" src="./assets/Lebron-lakers-body.png" alt="">
-            </div>
-            <div class="col text-center text-light centrado">
+            </figure>
+            <div class="col pe-5 text-center text-light centrado">
                 <h2>Biografia</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit facilis repellendus aliquam nobis minus debitis, reiciendis perferendis eos, blanditiis, modi distinctio? Exercitationem quasi voluptate distinctio hic, laboriosam mollitia labore similique?</p>
+                <p>LeBron Raymone James es un jugador de baloncesto estadounidense que actualmente pertenece a la plantilla de Los Angeles Lakers de la NBA.  Su posición es la de alero, pero su talento, versatilidad y poderío físico le permiten jugar tanto de base como de ala-pívot. James es considerado como uno de los mejores jugadores de baloncesto del mundo y de la historia.
+                </p>
+                <div class="text-start d-inline-block info-personal">
+                    <h3 class="fs-5">edad: 37 años</h3>
+                    <h3 class="fs-5">Estatura: 2.06 m</h3>
+                    <h3 class="fs-5">Peso: 113 kg</h3>
+                    <h3 class="fs-5">Apodos: "King James" "Bron"</h3>
+                </div>
             </div>
         </div>
     </section>
+    <footer class="row nav mx-auto">
+        <a class="col nav-brand" href="./index.html">
+            <img class="navbar-brand logo-nav" src="./assets/logo-lebron-blanco.png" alt="logo-lebron-james">
+        </a>
+        <div class="col"></div>
+        <div class="col">
+            <h4 class="text-center text-light fs-4">Info. de contacto</h4>
+            <a class="nav-link link-light text-decoration-underline" href="#">
+                <p class="text-center fw-bold fs-5">Contacto</p>
+            </a>
+            <p class="text-light fw-bold">Tel: 00-54521154</p>
+            <p class="text-light fw-bold">Email: email@example.com</p>
+            <p class="text-light fw-bold">Ubicacion: maiami, florida</p>
+        </div>
+        <div class="col">
+        </div>
+        <div class="col">
+            <h4 class="text-center text-light fs-4">Redes Sociales</h4>
+            <a class="nav-link active link-light text-decoration-underline fs-5 fw-bold" href="#">Instagram</a>
+            <a class="nav-link text-light text-decoration-underline fs-5 fw-bold" href="#">twitter</a>
+            <a class="nav-link text-light text-decoration-underline fs-5 fw-bold" href="#">Youtube</a>
+            <a class="nav-link text-light text-decoration-underline fs-5 fw-bold" href="#">Linkedin</a>
+        </div>
+        <div class="col">
+        </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
