@@ -1,72 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../style/style.css">
+
     <title>Trayectoria</title>
 </head>
+
 <body>
-    <!--Barra de navegacion-->
-    <header>
-        <a href="../index.html">
-            <img src="../assets/logo-lebron-blanco.png" alt="logo-lebron-james">
-        </a>
-        <nav>
-            <ul>
-                <li>
-                    <a href="trayectoria.html" class="boton">Trayectoria</a>
-                </li>
-                <li>
-                    <a href="logros.html" class="boton">Logros</a>
-                </li>
-                <li>
-                    <a href="estadisticas.html" class="boton">Estadisticas</a>
-                </li>
-                <li>
-                    <a href="contacto.html" class="boton">Contacto</a>
-                </li>
-            </ul>
+    <!--navbar-->
+    <header class="navbar navbar-expand-lg navbar-dark fondo-nav">
+        <nav class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+                <img class="navbar-brand logo-nav" src="../assets/logo-lebron-blanco.png" alt="logo-lebron-james">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item ps-2">
+                        <a class="nav-link active boton" aria-current="page"
+                            href="./trayectoria.html">Trayectoria</a>
+                    </li>
+                    <li class="nav-item ps-2">
+                        <a class="nav-link disabled boton" href="#">Logros</a>
+                    </li>
+                    <li class="nav-item ps-2">
+                        <a class="nav-link disabled boton" href="#">Estadisticas</a>
+                    </li>
+                    <li class="nav-item ps-2">
+                        <a class="nav-link disabled boton">Contacto</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
+    <!--Contenido de pagina-->
     <main>
-        <section class="trayectoria">
-            <h1 class="titulo">Trayectoria</h1>
-            <figure class="lebron-rookie">
+        <section class="w-50 mx-auto trayectoria">
+            <h1 class="text-light pt-2 pb-2 titulo">Trayectoria</h1>
+            <figure class="pt-5 lebron-rookie">
                 <img src="../assets/lebron-rookie.png" alt="lebron-rookie">
             </figure>
-                <div class="cleveland">
+                <div class="pt-5 cleveland">
                     <img src="../assets/Cleveland-Cavaliers-logo.svg.png" alt="logo-cleveland-cavaliers" class="logo-equipo">
-                    <h2>Cleveland Cavaliers</h2>
-                    <h3>2003-2010 y 2014-2018</h3>
+                    <h2 class="text-light fs-3">Cleveland Cavaliers</h2>
+                    <h3 class="text-light fs-5">2003-2010 y 2014-2018</h3>
                 </div>
-                <div class="heat">
+                <div class="pt-2 heat">
                     <img src="../assets/Miami-Heat-logo.svg.png" alt="logo-miami-heat" class="logo-equipo">
-                    <h2>Miami Heat</h2>
-                    <h3>2010-2014</h3>
+                    <h2 class="text-light fs-3">Miami Heat</h2>
+                    <h3 class="text-light fs-5">2010-2014</h3>
                 </div>
-                <div class="lakers">
+                <div class="pt-2 mx-auto lakers">
                     <img src="../assets/Lakers-logo.svg.png" alt="logo-los-angeles-lakers" class="logo-equipo">
-                    <h2>Lakers</h2>
-                    <h3>2018- Hasta la actualidad</h3>
+                    <h2 class="text-light fs-3">Lakers</h2>
+                    <h3 class="text-light fs-5">2018- Hasta la actualidad</h3>
                 </div>
         </section>
     </main>
-    <!--Pie de pagina-->
-    <footer>
-        <a href="../index.html"><img src="../assets/logo-lebron-blanco.png" alt="logo-lebron-james" class="logo"></a>
-        <div>
-            <a href="https://www.instagram.com/kingjames/" target="_blank">
-                <img src="../assets/logo-ig.png" alt="logo-instagram">
+    <!--pie de pagina-->
+    <footer class="row nav mx-auto pt-2">
+        <div class="col">
+            <a class="nav-brand" href="./index.html">
+                <img class="navbar-brand logo-nav" src="../assets/logo-lebron-blanco.png" alt="logo-lebron-james">
             </a>
-            <a href="https://twitter.com/KingJames" target="_blank">
-                <img src="../assets/logo-twitter.png" alt="logo-twitter">
+            <h4 class="text-light fs-5 fw-lighter">© 2022 Company, Inc. All rights reserved</h4>
+        </div>
+        <div class="col"></div>
+        <div class="col">
+            <h4 class="text-center text-light fs-4">Info. de contacto</h4>
+            <a class="nav-link link-light text-decoration-underline" href="#">
+                <p class="text-center fw-bold fs-5">Contacto</p>
             </a>
-            <a href="https://www.lebronjamesfamilyfoundation.org/" target="_blanck">
-                <img src="../assets/logo-fundacion.png" alt="logo-fundacion">
-            </a>
+            <p class="text-light fw-bold">Tel: 00-54521154</p>
+            <p class="text-light fw-bold">Email: email@example.com</p>
+            <p class="text-light fw-bold">Ubicacion: maiami, florida</p>
+        </div>
+        <div class="col">
+        </div>
+        <div class="col">
+            <h4 class="text-center text-light fs-4">Redes Sociales</h4>
+            <a class="nav-link active link-light text-decoration-underline fs-5 fw-bold" href="#">Instagram</a>
+            <a class="nav-link text-light text-decoration-underline fs-5 fw-bold" href="#">twitter</a>
+            <a class="nav-link text-light text-decoration-underline fs-5 fw-bold" href="#">Youtube</a>
+            <a class="nav-link text-light text-decoration-underline fs-5 fw-bold" href="#">Linkedin</a>
+        </div>
+        <div class="col">
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
 </body>
+
 </html>

@@ -16,14 +16,18 @@ body{
     background-attachment: fixed;
     background-size: cover;
 }
+
 /*navbar*/
+
 .fondo-nav{
     background-color: rgba(46, 21, 63, 0.9);
 }
 .logo-nav{
     width: 100px;
 }
+
 /*animacion botones navbar*/
+
 .boton{
     border: 2px solid #3c66e3;
     border-radius: 15px;
@@ -38,7 +42,9 @@ body{
         0 0 15px #4e00c2;
     }
 }
+
 /*contenido*/
+
 section{
     background-color: rgba(0, 0, 0, 0.75);
     border-radius: 5%;
@@ -47,7 +53,7 @@ h1{
     border-bottom: 2px solid rgba(242, 214, 75, 1);
 }
 .lebron-james{
-    width: 350px;
+    width: 360px;
 }
 .centrado{
     padding-top: 10%;
@@ -61,7 +67,52 @@ h1{
     padding-left: 2px;
 }
 
+/*pagina de trayectoria*/
+
+.trayectoria figure img{
+    width: 250px;
+    margin-left: 50px;
+    margin-right: 0px;
+}
+.trayectoria{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-template-areas: "titulo titulo"
+                        "imagen equipoa"
+                        "imagen equipob"
+                        "equipoc equipoc";
+}
+
+.titulo{
+    grid-area: titulo;
+    text-align: center;
+}
+.lebron-rookie{
+    grid-area: imagen;
+}
+.cleveland{
+    grid-area: equipoa;
+    display: flex; 
+    flex-direction: column;
+}
+.heat{
+    grid-area: equipob;
+    display: flex; 
+    flex-direction: column;
+}
+.lakers{
+    grid-area: equipoc;
+    display: flex; 
+    flex-direction: column;
+} 
+.logo-equipo{
+    width: 100px;
+}
+
+
 /*pie de pagina*/
+
 footer{
     background-color: rgba(46, 21, 63, 0.9);
 }
